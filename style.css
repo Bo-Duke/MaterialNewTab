@@ -1,5 +1,22 @@
 body{
 	background: url('img/mountainsday.png') no-repeat center center fixed;
-
 	background-size: cover;
+
+	margin: 0px;
+}
+
+.websiteWrap{
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content : center;
+	align-items: center;
+}
+
+.website{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	margin: 15px;
 }
