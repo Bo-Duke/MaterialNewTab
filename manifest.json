@@ -1,0 +1,10 @@
+ {
+	"name":"Material New Tab page",
+	"description":"Material Design New Tab Page",
+	"author": "Maxime Bouveron",
+	"version":"0.1",
+	"manifest_version":2,
+	"chrome_url_overrides" : {
+		"newtab": "newTab.html"
+	}
+}
