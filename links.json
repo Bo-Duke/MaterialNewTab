@@ -1,0 +1,46 @@
+{
+	"Link_1":{
+		"name":"Facebook",
+		"link":"http://facebook.com",
+		"icon":"img/icons/facebook.png",
+		"color":"#39569B;"
+	},
+	"Link_2":{
+		"name":"Betaseries",
+		"link":"http://betaseries.com",
+		"icon":"img/icons/betaseries.jpg",
+		"color":"#3B8DD0;"
+	},
+	"Link_3":{
+		"name":"Marvel",
+		"link":"http://marvel.com",
+		"icon":"img/icons/marvel.png",
+		"color":"#E63A2E;"
+	},
+	"Link_4":{
+		"name":"Reddit",
+		"link":"http://reddit.com",
+		"icon":"img/icons/reddit.png",
+		"color":"#016CB6;"
+	},
+	"Link_5":{
+		"name":"SensCritique",
+		"link":"http://senscritique.com",
+		"icon":"img/icons/senscritique.png",
+		"color":"#000000;"
+	},
+	"Link_6":{
+		"name":"OMG Chrome",
+		"link":"http://omgchrome.com",
+		"icon":"img/icons/omgchrome.png",
+		"color":"#21A4FE;"
+	},
+}
+
+
+
+
+
+
+
+
