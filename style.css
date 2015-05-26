@@ -32,6 +32,8 @@ body{
 	
 	background-size: 100px 100px;
 	background-repeat: no-repeat;
+
+	background-color: #777;
 }
 
 .website:hover{
@@ -42,29 +44,4 @@ body{
 	margin-top: 100px;
 	margin-left: 8px;
 	color: #fff;
-}
-
-.link_1{
-	background-image: url('img/icons/facebook.png');
-	background-color: #39569B;
-}
-.link_2{
-	background-image: url('img/icons/betaseries.jpg');
-	background-color: #3B8DD0;
-}
-.link_3{
-	background-image: url('img/icons/marvel.png');
-	background-color: #E63A2E;
-}
-.link_4{
-	background-image: url('img/icons/reddit.png');
-	background-color: #016CB6;
-}
-.link_5{
-	background-image: url('img/icons/senscritique.png');
-	background-color: #000000;
-}
-.link_6{
-	background-image: url('img/icons/omgchrome.png');
-	background-color: #21A4FE;
 }
