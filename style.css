@@ -36,6 +36,8 @@ body{
 	background-color: #777;
 
 	-webkit-user-select: none;
+
+	display: block;
 }
 
 .website:hover{
@@ -46,4 +48,9 @@ body{
 	margin-top: 100px;
 	margin-left: 8px;
 	color: #fff;
+	position: absolute;
+}
+input{
+	margin-left: 14px;
+	padding-left: 3px;
 }
