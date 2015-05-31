@@ -54,3 +54,31 @@ input{
 	margin-left: 14px;
 	padding-left: 3px;
 }
+.fab{
+	display: block;
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	transition: all .25s ease-in;
+	z-index: 999;
+
+	padding-left: 18px;
+	padding-top: 6px;
+	font-size: 30px;
+	text-decoration: none;
+
+	box-sizing: border-box;
+
+	-webkit-user-select: none;
+
+	background-color: #d23f31;
+	color: #ffffff;
+	border-radius: 50%;
+
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+.fab:hover{
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
