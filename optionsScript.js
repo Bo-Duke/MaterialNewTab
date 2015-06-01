@@ -50,8 +50,17 @@ request.onerror = function() {
 
 request.send();
 
-for (var i = 0; i<document.forms.length; i++){
-	console.log(document.forms["form_"+(i+1)]["Name"]);
-	// var obj = { name: 'Dhayalan', score: 100 };
-	// localStorage.setItem('gameStorage', JSON.stringify(obj));
-}
+document.getElementById("validate").onclick=function(){
+	var links = {};
+	for (var i = 0; i<document.forms.length; i++){
+		console.log(document.forms["form_"+(i+1)]["Name"].value);
+		links[i] = { 
+			name:  document.forms["form_"+(i+1)]["Name"].value,
+			url:   document.forms["form_"+(i+1)]["url"].value,
+			icon:  document.forms["form_"+(i+1)]["icon"].value,
+			color: document.forms["form_"+(i+1)]["color"].value
+		};
+	}
+	localStorage.setItem('newtabLinks', JSON.stringify(links));
+	console.log(JSON.stringify(links));
+};
