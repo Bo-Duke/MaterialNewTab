@@ -19,7 +19,6 @@ else if (hour >= 0 && hour < 5){
 
 var data = JSON.parse(localStorage.getItem("newtabLinks"));
 
-console.log(data);
 for (var i = 0; i < 6; i++) {
 	var activeLink = document.getElementById("link_"+(i+1));
 	activeLink.href = data[i].url;
@@ -37,7 +36,6 @@ for (var i = 0; i < 6; i++) {
 document.getElementById("validate").onclick=function(){
 	var links = [];
 	for (var i = 0; i<document.forms.length; i++){
-		console.log(document.forms["form_"+(i+1)]["Name"].value);
 		links[i] = { 
 			name:  document.forms["form_"+(i+1)]["Name"].value,
 			url:   document.forms["form_"+(i+1)]["url"].value,

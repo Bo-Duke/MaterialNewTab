@@ -19,8 +19,7 @@ else if (hour >= 0 && hour < 5){
 
 var data = JSON.parse(localStorage.getItem("newtabLinks"));
 
-console.log(data);
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < data.length; i++) {
 	var activeLink = document.getElementById("link_"+(i+1));
 	activeLink.href = data[i].url;
 	activeLink.firstElementChild.innerHTML = data[i].name;
