@@ -40,7 +40,7 @@ document.getElementById("validate").onclick=function(){
 			name:  document.forms["form_"+(i+1)]["Name"].value,
 			url:   document.forms["form_"+(i+1)]["url"].value,
 			icon:  document.forms["form_"+(i+1)]["icon"].value,
-			color: document.forms["form_"+(i+1)]["color"].value
+			color: "#"+document.forms["form_"+(i+1)]["color"].value
 		};
 	}
 	localStorage.setItem('newtabLinks', JSON.stringify(links));
