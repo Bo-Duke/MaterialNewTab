@@ -17,29 +17,13 @@ else if (hour >= 0 && hour < 5){
 	changeBg("night");
 }
 
-var data;
-request = new XMLHttpRequest();
-request.open('GET', 'links.json', true);
+var data = JSON.parse(localStorage.getItem("newtabLinks"));
 
-request.onload = function() {
-  if (request.status >= 200 && request.status < 400){
-    data = JSON.parse(request.responseText);
-
-    for (var i = 0; i < data.links.length; i++) {
-    	var activeLink = document.getElementById("link_"+(i+1));
-    	activeLink.href=data.links[i].url;
-    	activeLink.firstElementChild.innerHTML = data.links[i].name;
-    	activeLink.style.backgroundImage = "url('"+data.links[i].icon+"')";
-    	activeLink.style.backgroundColor = data.links[i].color;
-    }
-  } else {
-    
-
-  }
-};
-
-request.onerror = function() {
-  
-};
-
-request.send();
+console.log(data);
+for (var i = 0; i < 6; i++) {
+	var activeLink = document.getElementById("link_"+(i+1));
+	activeLink.href = data[i].url;
+	activeLink.firstElementChild.innerHTML = data[i].name;
+	activeLink.style.backgroundImage = "url('"+data[i].icon+"')";
+	activeLink.style.backgroundColor = data[i].color;
+}
